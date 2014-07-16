@@ -19,17 +19,20 @@
 <body>
 
 <div class="header"><header>
-	<a href="#"><h3 class="title">Nicole Phillips</h3></a> <!-- Possibly look into available web fonts-->
+	<a href="#slide1"><h3 class="title">Nicole Phillips</h3></a> <!-- Possibly look into available web fonts-->
 	<nav>
 		<ul class="navigation">
 			<li>
-				<a href="#slide2">Portfolio</a>
+				<a href="#slide1">Portfolio</a>
 			</li>
 			<li>
-				<a href="#slide3">About</a>
+				<a href="#slide2">About</a>
 			</li>
 			<li>
-				<a href="#slide4">Resume</a>
+				<a href="#slide3">Resume</a>
+			</li>
+			<li>
+				<a href="#slide4">Contact Me</a>
 			</li>
 		</ul> <!--CSS transitions: changing opacity, or scaling up size of text. Use ease-in or ease-in-out.-->
 	</nav>
@@ -38,17 +41,7 @@
 
 
 
-
 <div class="slide" id="slide1">
-	<div class="wrapper">
-<section class="intro">
-<img src="#" alt="photo" title="This is Nicole."/>
-<h2>Nicole Phillips: Your Next Web Developer</h2>
-</section>
-</div>
-</div>
-
-<div class="slide" id="slide2">
 	<div class="wrapper">
 <section class="portfolio">
 a list of images, that should form a grid pattern. then use shadowbox/lightbox
@@ -57,20 +50,33 @@ a list of images, that should form a grid pattern. then use shadowbox/lightbox
 </div>
 </div>
 
-<div class="slide" id="slide3">
+<div class="slide" id="slide2">
 	<div class="wrapper">
 <section class="about">
-A paragraph or two, like a cover letter about myself. Engaging.
+	<div class="side-info">
+	<img class="main-photo" src="images/photo-nicole.jpg" border="0" alt="Photo" title="This is me!" />
+<div class="side-text">
+<h3>Nicole Phillips</h3>
+<p>Web Producer/Developer</p>
+</div>
+</div>
+
+<p class="intro-text">
+	Monday to Friday, 9-5, I code emails. After those hours and on the weekends, I work on my web development projects. I first got interested in web development and design, in high school. My high school computer teacher had assigned us the task of building a website, using <a href="http://en.wikipedia.org/wiki/Microsoft_FrontPage">Microsoft FrontPage</a>, I believe. Well, I had the hardest time getting the images and header text, to go where I wanted it to. This led to me, taking it upon myself, to find out how code it by hand. I would further grow my knowledge in college, through updating my Xanga and myspace pages. Also in my core classes for my concentration, Multimedia. It would be in one of these classes, I would be first introduced to Adobe Fireworks &amp; Flash, formerly owned by Macromedia. After working with Fireworks, I finally realized WYSIWYG editors, were not my friends. <br><br>
+
+	I was lucky enough to have more than one professor in my department to encourage my curiosity and my thirst for learning as much as I could about web development. I have over three years experience working in a front end development capacity, ranging from building out microsites &amp; landing pages to the development of HTML emails optimized for viewing in different email clients and mobile devices. Web design &amp; development, is always changing &amp; growing. I look forward to learning what new things they have to offer and to further develop my skills.</p>
+
+
 </section>
 </div>
 </div>
 
 
 
-<div class="slide" id="slide4">
+<div class="slide" id="slide3">
 	<div class="wrapper">
 <section class="resume">
-<div class="download"><a href="#">PDF</a> | <a href="#">DOC</a></div>
+<div class="download"><a class="pdf" href="#">PDF</a> | <a class="doc" href="docs/NicolePhillipsFrontEndWebDeveloper-01242014.doc">DOC</a> | <a class="linkedin" href="http://www.linkedin.com/in/nicolephillips/" target="_blank">LINKEDIN</a></div>
 <section class="cv">
 <h3>Objective</h3>
 <p class="summary">Utilize my knowledge, proficiency, and skills to contribute to a company's growth, while continuing to increase my knowledge in my field.</p>
@@ -92,7 +98,7 @@ A paragraph or two, like a cover letter about myself. Engaging.
 </ul>
 
 <h2>Adecco Marketing - New York, NY</h2>
-<p class="position">Web/Digital Producer - Contractor //  August 2010 &ndash; November 2010</p>
+<p class="position">Web Producer/Developer - Contractor //  August 2010 &ndash; November 2010</p>
 <ul class="points">
 <li>Build-out of content rich websites and web 2.0 functionalities</li>
 <li>Created landing pages, email blasts, and micro sites</li>
@@ -142,7 +148,26 @@ May 2008 - Cum Laude, Dean's List, Member of the Phi Eta Sigma Honor Society
 </div>
 </div>
 
-
+<div class="slide" id="slide4">
+	<div class="wrapper">
+<section class="contact">
+<!--contact form-->
+<h2>Contact Me</h2>
+<form action="contact.php" method="post">
+    First Name
+    <input type="text" name="cf_fname" /><br>
+    Last Name
+    <input type="text" name="cf_lname" /><br>
+    Your e-mail
+    <input type="text" name="cf_email" /><br>
+    Message<br>
+    <textarea name="cf_message" rows="6" cols="40"></textarea><br>
+<input type="submit" value="Send" />
+<input type="reset" value="Clear" />
+</form>
+</section>
+</div>
+</div>
 
 
 <footer class="container_12">

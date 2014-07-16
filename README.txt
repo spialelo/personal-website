@@ -1,0 +1,1 @@
+20140715 - Finally resized the photos of previous work for portfolio.
