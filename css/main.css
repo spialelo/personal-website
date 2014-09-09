@@ -1,8 +1,18 @@
+/*Written by Nicole Phillips*/
+
+
+/*Google Font: Noto Sans*/
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+
+
+/*Charset declared*/
 @charset "utf-8";
+
+
 /*CSS Document*/
 html, body{
-	font-size: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-family: "Noto Sans", Arial, sans-serif;
 }
 
 body{
@@ -18,19 +28,21 @@ header {
 background-color: #262626;
 	width: 100%;
 	height: 50px;
-	box-shadow: 0 1px 50px #5e5e5e;
+	box-shadow: 0px 1px 50px #5e5e5e;
 	position: fixed;
 	top: 0px;
 	margin: 0 auto;
 	z-index: 1;
 
 }
+
+
 .title{
 color:#EDEDED;
- font-family:Helvetica, Arial, sans-serif;
- font-size:1.5625em;
+ font-family:"Noto Sans", Arial, sans-serif;
+ font-size:24px;
  width:350px;
- margin-top:6px;
+ margin-top:10px;
  font-weight:bold;
  float:left;
  text-transform: uppercase;
@@ -41,7 +53,7 @@ color:#EDEDED;
 nav {
 	float:right;
 	margin-top: 15px;
-	font-size: 1em;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 
@@ -60,16 +72,20 @@ ul.navigation li{
 ul.navigation > li > a {
 	text-decoration: none;
 	color: #ffffff;
-	-webkit-transition: background-color 700ms ease-out 1s;
-	-moz-transition: background-color 700ms ease-out 1s;
-	-o-transition: background-color 700ms ease-out 1s;
-	transition: background-color 700ms ease-out 1s;
+	-webkit-transition: background-color 300ms ease-out 1s;
+	-moz-transition: background-color 300ms ease-out 1s;
+	-o-transition: background-color 300ms ease-out 1s;
+	transition: background-color 300ms ease-out 1s;
 	background-color: #262626;
 	border-radius: 25px;
 	padding: 5px 10px;
 }
 
 ul.navigation li a:hover{
+	-webkit-transition: background-color 300ms ease-out 1s;
+	-moz-transition: background-color 300ms ease-out 1s;
+	-o-transition: background-color 300ms ease-out 1s;
+	transition: background-color 300ms ease-out 1s;
 	background-color: #ad310b;
 
 }
@@ -78,17 +94,11 @@ ul.navigation li a:active{
 	background-color: #ad310b;
 }
 
-img[alt="arrow"]{
-	bottom:0px;
-}
-
-
-
 
 .side-info{
 	float: right;
-	font-size: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-family: "Noto Sans", Arial, sans-serif;
 	background-color: #FFD8BF;
 	margin: 0 0 5px 25px;
 	border-radius: 35px;
@@ -103,22 +113,22 @@ img.main-photo{
 
 
 .intro-text{
-	font-size: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-family: "Noto Sans", Arial, sans-serif;
 	text-align: left;	
 }
 
 
 p.intro-text::first-letter{
 	font-weight: bold;
-	font-size: 3em;
-	line-height: 0.75em;
+	font-size: 48px;
+	line-height: 10px;
 }
 
 .side-text{
 	margin-bottom: 15px;
-	font-size: 1em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-family: "Noto Sans", Arial, sans-serif;
 	text-align: center;
 	
 }
@@ -130,6 +140,7 @@ p.intro-text::first-letter{
 	width:100%;
 	height:100%;
 	padding-top: 80px;
+	padding-bottom: 30px;
 	position: relative;
 	margin: 0 auto;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
@@ -146,14 +157,29 @@ p.intro-text::first-letter{
 }
 
 .portfolio{
-	font-family: Helvetica,Arial, sans-serif;
-	font-size: 1em;
-	margin-top: 15px;
+	padding-top:10px;
+	
 }
 
+
+img.thumbnail-gallery {
+	width:25%;
+	height:25%;
+	display: inline;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+
+/*div.row{
+
+	padding-bottom: 5px;
+}*/
+
 .about{
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-family: "Noto Sans", Arial, sans-serif;
+	font-size: 16px;
 	margin-top: 15px;
 	float: left;
 }
@@ -166,9 +192,9 @@ p.intro-text::first-letter{
 
 .download {
 	float: right;
-	font-family: Helvetica,Arial, sans-serif;
-	font-size: 0.75em;
-	padding-bottom: 0.75em;
+	font-family: "Noto Sans", Arial, sans-serif;
+	font-size: 12px;
+	padding-bottom: 10px;
 
 }
 
@@ -203,26 +229,26 @@ a.linkedin:before{
 }
 
 .resume h3 {
-font-size: 1.175em;
+font-size: 18px;
 text-transform: uppercase;
 border-bottom: 1px dashed #000000;
-margin-bottom: 0.85em;
+margin-bottom: 14px;
 }
 
 p.summary {
-	font-size: 0.85em;
-	margin-bottom: 1em;
+	font-size: 14px;
+	margin-bottom: 16px;
 }
 
 p.position{
-	font-size: 0.85em;
+	font-size: 14px;
 	font-style: italic;
 	margin-bottom: 0.25em;
 }
 
 .resume ul{
-	font-size: 0.85em;
-	padding-bottom: 1.12em;
+	font-size: 14px;
+	padding-bottom: 18px;
 	list-style:inside;
 	
 	 
@@ -234,8 +260,8 @@ p.position{
 
 
 .contact{
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1em;
+	font-family: "Noto Sans", Arial, sans-serif;
+	font-size: 16px;
 	margin-top: 15px;
 }
 
@@ -249,7 +275,7 @@ footer{
 	text-align: center;
 	padding-top: 25px;
 	width: 960px;
-	font-size: 0.75em;
-	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-family: "Noto Sans", Arial, sans-serif;
 	clear: both;
 }

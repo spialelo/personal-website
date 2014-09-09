@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*CSS Document*/
+html, body{
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+margin: 0 auto;
+}
+
+header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+section img .thumbnail {
+border:1px solid #ff0000;
+
+}
