@@ -1,9 +1,74 @@
 /*Written by Nicole Phillips*/
 
 
-/*Google Font: Noto Sans*/
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+/*Google Font: Noto Sans using font-face*/
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://fonts.gstatic.com/s/notosans/v6/erE3KsIWUumgD1j_Ca-V-xJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(http://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(http://fonts.gstatic.com/s/notosans/v6/PIbvSEyHEdL91QLOQRnZ1z0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(http://fonts.gstatic.com/s/notosans/v6/PIbvSEyHEdL91QLOQRnZ1zy24DTBG-RpCwXaYkM4aks.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(http://fonts.gstatic.com/s/notosans/v6/ByLA_FLEa-16SpQuTcQn4CYE0-AqJ3nfInTTiDXDjU4.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(http://fonts.gstatic.com/s/notosans/v6/ByLA_FLEa-16SpQuTcQn4OL2WfuF7Qc3ANwCvwl0TnA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(http://fonts.gstatic.com/s/notosans/v6/9Z3uUWMRR7crzm1TjRicDujkDdvhIIFj_YMdgqpnSB0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(http://fonts.gstatic.com/s/notosans/v6/9Z3uUWMRR7crzm1TjRicDtGR1r2frwpfjEqI8Bb_XHU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 /*Charset declared*/
 @charset "utf-8";
@@ -13,10 +78,12 @@
 html, body{
 	font-size: 16px;
 	font-family: "Noto Sans", Arial, sans-serif;
+	height: 100%;
 }
 
 body{
 margin: 0 auto;
+display: block;
 }
 
 header {
@@ -140,7 +207,6 @@ p.intro-text::first-letter{
 	width:100%;
 	height:100%;
 	padding-top: 80px;
-	padding-bottom: 30px;
 	position: relative;
 	margin: 0 auto;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
@@ -150,32 +216,42 @@ p.intro-text::first-letter{
 	height:100%;
 	margin:0 auto;
 	position:relative;
+	/*overflow: auto;*/
 }
 
 #slide1{
 	background-color: #FFFFFF;
 }
 
+#slide2{
+	clear: both;
+}
+
+#slide3{
+	clear: both;
+}
+
 .portfolio{
-	padding-top:10px;
 	
+padding: 20px 0;
+
 }
 
 
 img.thumbnail-gallery {
 	width:25%;
 	height:25%;
-	display: inline;
+	display: inline-block;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	float: left;
 }
 
 
-/*div.row{
-
+div.row{
+	float: left;
 	padding-bottom: 5px;
-}*/
+}
 
 .about{
 	font-family: "Noto Sans", Arial, sans-serif;
@@ -226,6 +302,7 @@ a.linkedin:before{
 
 .resume{
 	font-size: 1em;
+	padding-bottom: 30px;
 }
 
 .resume h3 {
@@ -278,4 +355,17 @@ footer{
 	font-size: 12px;
 	font-family: "Noto Sans", Arial, sans-serif;
 	clear: both;
+}
+
+/*clearfix solution from CSS Tricks*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }

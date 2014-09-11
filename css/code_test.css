@@ -5,14 +5,6 @@ html, body{
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-body{
-margin: 0 auto;
-}
-
-header {
-	width: 960px;
-	margin: 0 auto;
-}
 
 
 img.thumbnail {
@@ -20,4 +12,32 @@ border:1px solid #ff0000;
 width:300px;
 height:150px;
 
+}
+
+
+.container {
+display:block;
+margin: 0 auto;
+width: 960px;
+padding-top: 20px;
+overflow: hidden;
+}
+
+.main{
+float: left;
+padding: 0 40px;
+text-align: justify;
+}
+
+/*clearfix solution from CSS Tricks*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }

@@ -4,21 +4,19 @@
 <meta charset="utf-8">
 <title>Nicole Phillips: Your Next Web Developer</title>
 
+
+<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
 <link rel="stylesheet" type="text/css" href="css/reset.css"/>
 <link rel="stylesheet" type="text/css" href="css/960.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/jquery.stelalr.min.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
 </head>
 
 <body>
 
-<div class="header"><header>
+<div class="header">
+    <header class="container_12">
 	<a href="#slide1"><h3 class="title">Nicole Phillips</h3></a> <!-- Possibly look into available web fonts-->
 	<nav>
 		<ul class="navigation">
@@ -44,36 +42,40 @@
 <div class="slide" id="slide1">
 	<div class="wrapper">
 <section class="portfolio">
-a list of images, that should form a grid pattern. then use shadowbox/lightbox
-<div class="gallery">
-  <div class="row">
-    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Engineering-Technical_700x758.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Group-NorthAmerica-Presents-The-History-of-Labor-Day_940x667.png"/>
+
+ <div class="row">
+    <a href="images/portfolio/Adecco-Engineering-Technical_700x758.png"><img data-lightbox="Adecco-1" data-title="Adecco Engineering Technical" class="thumbnail-gallery" src="images/portfolio/Adecco-Engineering-Technical_700x758.png"/></a>
+    <a href="images/portfolio/Adecco-Group-NorthAmerica-Presents-The-History-of-Labor-Day_940x667.png"><img class="thumbnail-gallery" data-lightbox="Adecco-2" data-title="Adecco Group North America: The History of Labor Day" src="images/portfolio/Adecco-Group-NorthAmerica-Presents-The-History-of-Labor-Day_940x667.png"/></a>
     <img class="thumbnail-gallery" src="images/portfolio/Adecco-Better-work-better-life_600x704.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Group-Whitepapers_940x674.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Group-Case-studies_940x696.png"/>
+   
     <!-- more images -->
   </div>
   <div class="row">
+   
+    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Group-Whitepapers_940x674.png"/>
+    <img class="thumbnail-gallery" src="images/portfolio/Adecco-Group-Case-studies_940x696.png"/>
     <img class="thumbnail-gallery" src="images/portfolio/succeednet_leaders_Pages_800x390.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/succeednet_brands_Pages_Our-brands_800x390.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/managedservers_template_930x793.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/referral_940x774.png"/>
-    <img class="thumbnail-gallery" src="images/portfolio/eblast_qm_645x878.png"/>
     <!-- more images -->
-
+  </div>
+  <div class="row">
+    
+    <img class="thumbnail-gallery" src="images/portfolio/succeednet_brands_Pages_Our-brands_800x390.png"/>
+    <!--<img class="thumbnail-gallery" src="images/portfolio/eblast_qm_645x878.png"/>-->
+    <img class="thumbnail-gallery" src="images/portfolio/referral_940x774.png"/>
+    
+    <!-- more images -->
+</div>
      <div class="row">
-    <img class="thumbnail-gallery" src="images/portfolio/homeflash_convcat_930x430.png"/>
+        <img class="thumbnail-gallery" src="images/portfolio/homeflash_convcat_930x430.png"/>
+    <img class="thumbnail-gallery" src="images/portfolio/managedservers_template_930x793.png"/>
+    
     <!-- more images -->
 
    </div>
-</div>
 
-
-
-</section>
-</div>
-</div>
+</section><!--end portfolio-->
+</div><!--end wrapper-->
+</div><!--end slide-->
 
 <div class="slide" id="slide2">
 	<div class="wrapper">
@@ -166,7 +168,9 @@ a list of images, that should form a grid pattern. then use shadowbox/lightbox
 Bachelors of Science, Information Technology: Multimedia Concentration from New Jersey Institute of Technology<br>
 May 2008 - Cum Laude, Dean's List, Member of the Phi Eta Sigma Honor Society
 </article>
-
+<br><br>
+adipoiuyhjlkjhjk<br>
+dfghjkl;;lk
 </section>
 </section>
 
@@ -200,6 +204,14 @@ May 2008 - Cum Laude, Dean's List, Member of the Phi Eta Sigma Honor Society
 <p>&copy; 2014 All rights reserved to Nicole Phillips &amp; Spialelo.</p>
 
 </footer>
+
+
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<!--<script type="text/javascript" src="js/slidejs.js"></script>-->
+
+
 
 </body>
 </html>
