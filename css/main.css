@@ -1,5 +1,8 @@
 /*Written by Nicole Phillips*/
 
+/*---------------------
+INITIAL STYLES
+----------------------*/
 
 /*Google Font: Noto Sans using font-face*/
 /* latin-ext */
@@ -79,12 +82,63 @@ html, body{
 	font-size: 16px;
 	font-family: "Noto Sans", Arial, sans-serif;
 	height: 100%;
+	color: #333;
 }
 
 body{
 margin: 0 auto;
 display: block;
 }
+
+/*HTML5 elements not supported across all browsers yet*/
+section, nav, footer, article, header{
+
+	display: block;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	padding-top: 80px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper{
+	width:960px;
+	height:100%;
+	margin:0 auto;
+	position:relative;
+	/*overflow: auto;*/
+}
+
+footer{
+	margin: auto 0;
+	text-align: center;
+	padding-top: 25px;
+	width: 960px;
+	font-size: 12px;
+	font-family: "Noto Sans", Arial, sans-serif;
+	clear: both;
+}
+
+/*clearfix solution from CSS Tricks*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*---------------------
+HEADER/NAV SECTION
+----------------------*/
 
 header {
 	width: 960px;
@@ -114,7 +168,6 @@ color:#EDEDED;
  float:left;
  text-transform: uppercase;
 }
-
 
 
 nav {
@@ -162,18 +215,60 @@ ul.navigation li a:active{
 }
 
 
+/*---------------------
+PORTFOLIO SECTION
+----------------------*/
+#slide1{
+	background-color: #FFFFFF;
+}
+
+.portfolio{
+	
+padding: 20px 0;
+
+}
+
+
+img.thumbnail-gallery {
+	width:25%;
+	height:25%;
+	display: inline-block;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+
+div.row{
+	float: left;
+	padding-bottom: 5px;
+}
+
+/*---------------------
+ABOUT SECTION
+----------------------*/
+#slide2{
+	clear: both;
+}
+
+.about{
+	font-family: "Noto Sans", Arial, sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+	float: left;
+}
+
 .side-info{
 	float: right;
 	font-size: 16px;
 	font-family: "Noto Sans", Arial, sans-serif;
-	background-color: #FFD8BF;
+	background-color: #fff;
+	border: 1px solid #666;
 	margin: 0 0 5px 25px;
-	border-radius: 35px;
 	box-shadow: 3px 5px 15px 1px #cccccc;
 }
 
 img.main-photo{
-	border-radius: 75px;
 	margin:15px;
 
 }
@@ -201,65 +296,12 @@ p.intro-text::first-letter{
 }
 
 
-
-.slide{
-	background-attachment: fixed;
-	width:100%;
-	height:100%;
-	padding-top: 80px;
-	position: relative;
-	margin: 0 auto;
-	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
-}
-.wrapper{
-	width:960px;
-	height:100%;
-	margin:0 auto;
-	position:relative;
-	/*overflow: auto;*/
-}
-
-#slide1{
-	background-color: #FFFFFF;
-}
-
-#slide2{
-	clear: both;
-}
-
+/*---------------------
+RESUME SECTION
+----------------------*/
 #slide3{
 	clear: both;
 }
-
-.portfolio{
-	
-padding: 20px 0;
-
-}
-
-
-img.thumbnail-gallery {
-	width:25%;
-	height:25%;
-	display: inline-block;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	float: left;
-}
-
-
-div.row{
-	float: left;
-	padding-bottom: 5px;
-}
-
-.about{
-	font-family: "Noto Sans", Arial, sans-serif;
-	font-size: 16px;
-	margin-top: 15px;
-	float: left;
-}
-
 
 .cv{
 	float:left;
@@ -336,36 +378,21 @@ p.position{
 }
 
 
+
+/*---------------------
+CONTACT SECTION
+----------------------*/
+
+#slide4{
+	clear: both;
+}
+
 .contact{
 	font-family: "Noto Sans", Arial, sans-serif;
 	font-size: 16px;
 	margin-top: 15px;
 }
 
-#slide4{
-	clear: both;
-}
 
 
-footer{
-	margin: auto 0;
-	text-align: center;
-	padding-top: 25px;
-	width: 960px;
-	font-size: 12px;
-	font-family: "Noto Sans", Arial, sans-serif;
-	clear: both;
-}
 
-/*clearfix solution from CSS Tricks*/
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-} 
-.group:after {
-    clear: both;
-}
-.group {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-}
