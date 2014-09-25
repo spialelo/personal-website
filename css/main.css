@@ -224,15 +224,16 @@ PORTFOLIO SECTION
 
 .portfolio{
 	
-padding: 20px 0;
+padding: 20px;
+margin: 0 auto;
 
 }
 
 
 img.thumbnail-gallery {
-	width:25%;
-	height:25%;
 	display: inline-block;
+	width: 200px;
+	height: 145px;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	float: left;
