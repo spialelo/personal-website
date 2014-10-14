@@ -96,6 +96,11 @@ section, nav, footer, article, header{
 	display: block;
 }
 
+h2{
+padding-bottom:10px;
+
+}
+
 .slide{
 	background-attachment: fixed;
 	width:100%;
@@ -279,13 +284,6 @@ img.main-photo{
 	font-size: 16px;
 	font-family: "Noto Sans", Arial, sans-serif;
 	text-align: left;	
-}
-
-
-p.intro-text::first-letter{
-	font-weight: bold;
-	font-size: 48px;
-	line-height: 10px;
 }
 
 .side-text{
